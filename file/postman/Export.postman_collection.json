@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "9aabb14e-d810-4501-9aba-a881f1dc9683",
+		"name": "Export",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GoLang RESTfull",
+			"item": [
+				{
+					"name": "POST Book",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"isbn\":\"123456\",\n    \"title\":\"Test Judul Buku\",\n    \"author\":{\n        \"firstname\":\"Aziz\",\n        \"lastname\":\"Sudrajat\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "POST Book",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"isbn\":\"123456\",\n    \"title\":\"Test Judul Buku\",\n    \"author\":{\n        \"firstname\":\"Aziz\",\n        \"lastname\":\"Sudrajat\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/books",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 Feb 2021 16:41:57 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "42"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"InsertedID\": \"60328d551ede3f1b33ff0b9c\"\n}"
+						}
+					]
+				},
+				{
+					"name": "GET ALL Books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/books",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "GET ALL Books",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/books",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 Feb 2021 16:42:10 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "253"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"_id\": \"6032690673a8e88e972d50fe\",\n        \"isbn\": \"123456\",\n        \"title\": \"Buku Aja\",\n        \"author\": {\n            \"firstname\": \"Aziz\",\n            \"lastname\": \"Sudrajat\"\n        }\n    },\n    {\n        \"_id\": \"60328d551ede3f1b33ff0b9c\",\n        \"isbn\": \"123456\",\n        \"title\": \"Test Judul Buku\",\n        \"author\": {\n            \"firstname\": \"Aziz\",\n            \"lastname\": \"Sudrajat\"\n        }\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "UPDATE Book",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"isbn\":\"999999\",\n    \"title\":\"Buku Aja Test\",\n    \"author\":{\n        \"firstname\":\"Aziz\",\n        \"lastname\":\"Sudrajat\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/books/6032690673a8e88e972d50fe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"books",
+								"6032690673a8e88e972d50fe"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "UPDATE Book",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"isbn\":\"999999\",\n    \"title\":\"Buku Aja Test\",\n    \"author\":{\n        \"firstname\":\"Aziz\",\n        \"lastname\":\"Sudrajat\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:8000/api/books/6032690673a8e88e972d50fe",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books",
+										"6032690673a8e88e972d50fe"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 Feb 2021 16:42:41 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "122"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"6032690673a8e88e972d50fe\",\n    \"isbn\": \"123456\",\n    \"title\": \"Buku Aja\",\n    \"author\": {\n        \"firstname\": \"Aziz\",\n        \"lastname\": \"Sudrajat\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "DELETE Book",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/books/6032690673a8e88e972d50fe",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"books",
+								"6032690673a8e88e972d50fe"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "DELETE Book",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:8000/api/books/6032690673a8e88e972d50fe",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"books",
+										"6032690673a8e88e972d50fe"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 21 Feb 2021 16:43:18 GMT"
+								},
+								{
+									"key": "Content-Length",
+									"value": "19"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"DeletedCount\": 1\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

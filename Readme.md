@@ -29,7 +29,7 @@ go run ./
 | DELETE | http://{yourhost}:8000/api/books/{id} | DELETE Book |
 
 ## Postman Collection
-File on Directory demo/postman
+File on Directory file/postman
 
 ## License
 MIT
