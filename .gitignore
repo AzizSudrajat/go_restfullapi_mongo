@@ -1,2 +1,5 @@
+// not commit
 main
 .env
+.DS_Store
+file/.DS_Store
